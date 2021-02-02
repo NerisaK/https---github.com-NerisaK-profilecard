@@ -1,0 +1,93 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: -300px -530px, 750px 350px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: smaller;
+    font-weight: 400px;
+    text-align: center;
+    line-height: 1.5;
+    color: hsl(227, 10%, 46%);
+    margin: auto;
+    padding: 0;
+}
+
+strong {
+    color: hsl(229, 23%, 23%);
+    font-size: 18px; 
+}
+
+.background-container {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    align-items: center;
+    grid-template-areas: 
+    ". . ."
+    ". box ."
+    ". . .";
+  }
+
+.box {   
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    grid-area: box;
+  }
+
+.pattern {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}  
+
+.victor {
+    border-radius: 50%;
+    border: 5px solid white;
+    float: center;
+    position: relative;
+    bottom: 55px;    
+}
+
+.about {
+    float: center;
+    position: relative;
+    bottom: 55px; 
+}
+
+.number {
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+hr {
+    width: auto;
+    position: relative;
+    bottom: 45px;
+    opacity: 0.3;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 40px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color:rgb(180, 214, 219); 
+}
+
+footer a:hover {
+    color:rgb(154, 204, 212);
+}
